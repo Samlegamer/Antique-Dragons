@@ -50,7 +50,6 @@ public class AntiqueDragons
 	public AntiqueDragons()
 	{
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::ClientSetup);
-		
 		LOGGER.info("Dragon Markers Is Charged !");
         MinecraftForge.EVENT_BUS.register(this);
 	}
