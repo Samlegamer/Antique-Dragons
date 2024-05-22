@@ -1,0 +1,39 @@
+modLoader="javafml" #mandatory
+loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+issueTrackerURL="https://github.com/Samlegamer/Antique-Dragons/issues" #optional
+
+[[mods]] #mandatory
+modId="antiquedragons" #mandatory
+version="1.18.2-1.0" #mandatory
+displayName="Antique Dragons" #mandatory
+displayURL="https://curseforge.com/minecraft/mc-mods/antique-dragons" #optional
+#logoFile="examplemod.png" #optional
+credits="RLCraft for Original Base Textures" #optional
+authors="Samlegamer" #optional
+description='''
+This Mod adds a new Marker to the Antique Atlas Mod.
+They are mainly used to mark cellars and dragon roost.
+The original idea came from RLCraft-2.9 which added 3 dragon icons.
+This mod adds all types (fire, ice, lightning).
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.antiquedragons]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[40,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.antiquedragons]]
+    modId="minecraft"
+    mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
